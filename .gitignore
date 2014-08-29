@@ -1,4 +1,6 @@
-##JetBrainse IDEA
+## JetBrainse IDEA:
 *.iml
 .idea/
 
+##Output project files:
+FS/firststeps/out
