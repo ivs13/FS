@@ -1,6 +1,10 @@
-## JetBrainse IDEA:
+## JetBrains IDEA:
 *.iml
 .idea/
+
+## AIDE
+.classpath
+.project
 
 ##Output project files:
 FS/firststeps/out
