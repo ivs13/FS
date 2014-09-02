@@ -1,87 +1,62 @@
 package com.company;
 
-public class LinkedList<T>
-{
+public class LinkedList<T> {
 
-    private class Node
-    {
-        private T data;
-        private Node next = null;
-
-        private Node(T data)
-        {
-            this.data = data;
-        }
-
-        private T getData()
-        {
-            return data;
-        }
-
-        private void setData(T data)
-        {
-            this.data = data;
-        }
-
-        private Node getNext()
-        {
-            return next;
-        }
-
-        private void setNext(Node next)
-        {
-            this.next = next;
-        }
+    private class Node {
+        public T data;
+        public Node next = null;
+		public Node prev = null;
+		
+		public Node(T value) {
+			this.data = value;
+		}
     }
 
-    public static class NodeNotFoundException extends RuntimeException {}
+    private static class NodeNotFoundException extends RuntimeException {}
 
     private Node head;
 
-    private void checkParams(T... values)
-    {
-        for (T value: values)
-            if (value == null)
-                throw new IllegalArgumentException();
-    }
-
-    private Node findNode(T value) throws NodeNotFoundException
-    {
-        Node result = head;
-        while (result != null)
-        {
-            if (result.getData().equals(value))
-                return result;
-            result = result.getNext();
+    private Node findNode(T value) throws NodeNotFoundException {
+        Node node = head;
+        while (node != null) {
+            if (node.data == null && value == null || node.data != null && node.data.equals(value)) {
+                return node;
+			}
+            node = node.next;
         }
         throw new NodeNotFoundException();
     }
+	
+	public void AddAtBegin(T value) {
+		Node newNode = new Node(value);
+		newNode.next = head;
+		if (newNode.next != null) {
+			newNode.next.prev = newNode;
+		}
+		head = newNode;
+	}
 
-    public void Add(T value)
-    {
-        checkParams(value);
+    public void AddAtEnd(T value) {
         Node newNode = new Node(value);
-        if (head == null)
-        {
+        if (head == null) {
             head = newNode;
         } else {
             Node lastNode = head;
-            while (lastNode.next != null)
+            while (lastNode.next != null) {
                 lastNode = lastNode.next;
+			}
             lastNode.next = newNode;
+			newNode.prev = lastNode;
         }
     }
 
-    public void AddBefore(T inseringValue, T existingValue) throws NodeNotFoundException
-    {
-        checkParams(inseringValue, existingValue);
+    public void AddBefore(T inseringValue, T existingValue) throws NodeNotFoundException {
         Node node = findNode(existingValue);
+		
     }
 
-    public void AddAfter(T value, T node)
-    {
-        checkParams(value, node);
-
+    public void AddAfter(T inseringValue, T existingValue) {
+        Node node = findNode(existingValue);
     }
 
 }
