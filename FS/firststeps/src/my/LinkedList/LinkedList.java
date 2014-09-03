@@ -1,78 +1,80 @@
 package my.LinkedList;
 
-import com.sun.corba.se.impl.logging.ORBUtilSystemException;
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
 
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<T> {
 
     private Node head;
 
-    private Node findNode(T value) throws NodeNotFoundException {
+    private Node findNode(T value) {
         Node node = head;
         while (node != null) {
-            if (node.data == null && value == null || node.data != null && node.data.equals(value)) {
+            if (node.getData() == null && value == null || node.getData() != null && node.getData().equals(value)) {
                 return node;
             }
-            node = node.next;
+            node = node.getNext();
         }
         throw new NodeNotFoundException("List doesn't contain \"" + value.toString() + "\" value.");
     }
-    
-    public void InsertAtBegin(T value) {
+
+    public void insertAtBegin(T value) {
         Node insertingNode = new Node(value);
         if (head == null) {
             head = insertingNode;
         } else {
-            head.InsertBefore(insertingNode);
+            head.insertBefore(insertingNode);
             head = insertingNode;
         }
     }
 
-    public void InsertAtEnd(T value) {
+    public void insertAtEnd(T value) {
         Node insertingNode = new Node(value);
         if (head == null) {
             head = insertingNode;
         } else {
             Node lastNode = head;
-            while (lastNode.next != null) {
-                lastNode = lastNode.next;
+            while (lastNode.getNext() != null) {
+                lastNode = lastNode.getNext();
             }
-            lastNode.InsertAfter(insertingNode);
+            lastNode.insertAfter(insertingNode);
         }
     }
 
-    public void InsertBefore(T insertingValue, T existingValue) throws NodeNotFoundException {
+    public void insertBefore(T insertingValue, T existingValue) {
         Node existingNode = findNode(existingValue);
         Node insertingNode = new Node(insertingValue);
-        existingNode.InsertBefore(insertingNode);
+        existingNode.insertBefore(insertingNode);
         if (head == existingNode) {
             head = insertingNode;
         }
     }
 
-    public void InsertAfter(T insertingValue, T existingValue) throws NodeNotFoundException {
+    public void insertAfter(T insertingValue, T existingValue) {
         Node existingNode = findNode(existingValue);
         Node insertingNode = new Node(insertingValue);
-        existingNode.InsertAfter(insertingNode);
+        existingNode.insertAfter(insertingNode);
     }
 
-    public void Delete(T deletingValue) throws NodeNotFoundException {
+    public void delete(T deletingValue) {
         Node existingNode = findNode(deletingValue);
-        existingNode.Delete();
+        existingNode.delete();
         if (head == existingNode) {
-            head = existingNode.next;
+            head = existingNode.getNext();
         }
     }
 
-    public void PrintYourself() {
+    public void printYourself() {
         if (head != null) {
             Node node = head;
             while (node != null) {
-                String outStr = (node.data != null ? node.data.toString() : "NULL") +
-                        "[" + (node.prev != null ? (node.prev.data != null ? node.prev.data.toString() : "NULL") : "null") +
-                        ", " + (node.next != null ? (node.next.data != null ? node.next.data.toString() : "NULL") : "null") + "]" +
-                        (node.next != null ? " -> " : ".");
+                String outStr = (node.getData() != null ? node.getData().toString() : "NULL") +
+                        "[" + (node.getPrev() != null ? (node.getPrev().getData() != null ? node.getPrev().getData().toString() : "NULL") : "null") +
+                        ", " + (node.getNext() != null ? (node.getNext().getData() != null ? node.getNext().getData().toString() : "NULL") : "null") + "]" +
+                        (node.getNext() != null ? " -> " : ".");
                 System.out.print(outStr);
-                node = node.next;
+                node = node.getNext();
             }
             System.out.println();
         } else {
@@ -80,4 +82,47 @@ public class LinkedList<T> {
         }
     }
 
+    @Override
+    public Iterator<T> iterator() {
+        return new DefaultIterator<T>(this);
+    }
+
+    @Override
+    public void forEach(Consumer<? super T> action) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public Spliterator<T> spliterator() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    class DefaultIterator<T> implements Iterator<T> {
+
+        private LinkedList<T> list;
+
+        public DefaultIterator(LinkedList<T> list) {
+            this.list = list;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return list.head
+        }
+
+        @Override
+        public T next() {
+            return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+
+        @Override
+        public void remove() {
+            //To change body of implemented methods use File | Settings | File Templates.
+        }
+
+        @Override
+        public void forEachRemaining(Consumer<? super T> action) {
+            //To change body of implemented methods use File | Settings | File Templates.
+        }
+    }
 }
