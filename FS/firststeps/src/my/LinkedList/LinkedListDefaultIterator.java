@@ -2,12 +2,13 @@ package my.LinkedList;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.*;
 
 class LinkedListDefaultIterator<T> implements Iterator<T> {
 
     private Node<T> cursorNode;
 
-    LinkedListDefaultIterator(Node headNode) {
+    LinkedListDefaultIterator(Node<T> headNode) {
         this.cursorNode = headNode;
     }
 
@@ -25,6 +26,10 @@ class LinkedListDefaultIterator<T> implements Iterator<T> {
         return result;
     }
 
-
+	@Override
+	public void remove()
+	{
+		throw new IllegalFormatException();
+	}
 
 }
