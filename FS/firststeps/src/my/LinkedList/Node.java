@@ -2,18 +2,18 @@ package my.LinkedList;
 
 class Node<T> {
     private T data;
-    private Node next = null;
-    private Node prev = null;
+    private Node<T> next = null;
+    private Node<T> prev = null;
 
     public T getData() {
         return data;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public Node getPrev() {
+    public Node<T> getPrev() {
         return prev;
     }
 
@@ -21,7 +21,7 @@ class Node<T> {
         this.data = value;
     }
 
-    void insertBefore(Node insertingNode) {
+    void insertBefore(Node<T> insertingNode) {
         insertingNode.prev = this.prev;
         insertingNode.next = this;
         if (insertingNode.prev != null) {
@@ -30,7 +30,7 @@ class Node<T> {
         this.prev = insertingNode;
     }
 
-    void insertAfter(Node insertingNode) {
+    void insertAfter(Node<T> insertingNode) {
         insertingNode.prev = this;
         insertingNode.next = this.next;
         if (insertingNode.next != null) {
