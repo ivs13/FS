@@ -1,8 +1,7 @@
 package my.LinkedList;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 import java.util.*;
+import java.util.NoSuchElementException;
 
 class LinkedListDefaultIterator<T> implements Iterator<T> {
 
