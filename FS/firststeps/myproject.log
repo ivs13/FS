@@ -1,0 +1,152 @@
+18:02:36,407  INFO main LinkedList:printYourself:82 - List is empty.
+18:02:36,435  INFO main LinkedList:printYourself:77 - ABC[null, null].
+18:02:36,437  INFO main LinkedList:printYourself:80 - 
+18:02:36,437  INFO main LinkedList:printYourself:77 - ABC[null, XYZ] -> 
+18:02:36,437  INFO main LinkedList:printYourself:77 - XYZ[ABC, null].
+18:02:36,437  INFO main LinkedList:printYourself:80 - 
+18:02:36,438  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,438  INFO main LinkedList:printYourself:77 - ABC[111, XYZ] -> 
+18:02:36,438  INFO main LinkedList:printYourself:77 - XYZ[ABC, null].
+18:02:36,438  INFO main LinkedList:printYourself:80 - 
+18:02:36,438  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,438  INFO main LinkedList:printYourself:77 - ABC[111, XYZ] -> 
+18:02:36,441  INFO main LinkedList:printYourself:77 - XYZ[ABC, ***] -> 
+18:02:36,441  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,441  INFO main LinkedList:printYourself:80 - 
+18:02:36,441  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,444  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:02:36,445  INFO main LinkedList:printYourself:77 - DDD[ABC, XYZ] -> 
+18:02:36,445  INFO main LinkedList:printYourself:77 - XYZ[DDD, ***] -> 
+18:02:36,445  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,445  INFO main LinkedList:printYourself:80 - 
+18:02:36,445  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,445  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:02:36,445  INFO main LinkedList:printYourself:77 - DDD[ABC, KKK] -> 
+18:02:36,446  INFO main LinkedList:printYourself:77 - KKK[DDD, XYZ] -> 
+18:02:36,446  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:02:36,446  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,446  INFO main LinkedList:printYourself:80 - 
+18:02:36,446  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - DDD[ABC, NULL] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - NULL[DDD, KKK] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:02:36,447  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,447  INFO main LinkedList:printYourself:80 - 
+18:02:36,448  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,448  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:02:36,448  INFO main LinkedList:printYourself:77 - DDD[ABC, NULL] -> 
+18:02:36,449  INFO main LinkedList:printYourself:77 - NULL[DDD, NULL] -> 
+18:02:36,449  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:02:36,449  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,449  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:02:36,449  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,449  INFO main LinkedList:printYourself:80 - 
+18:02:36,449  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:02:36,450  INFO main LinkedList:printYourself:77 - ABC[111, NULL] -> 
+18:02:36,450  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:02:36,450  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:02:36,450  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,450  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:02:36,451  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,451  INFO main LinkedList:printYourself:80 - 
+18:02:36,451  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:02:36,451  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:02:36,451  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:02:36,451  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:02:36,452  INFO main LinkedList:printYourself:80 - 
+18:02:36,452  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,452  INFO main LinkedList:printYourself:77 - XYZ[KKK, null].
+18:02:36,452  INFO main LinkedList:printYourself:80 - 
+18:02:36,452  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:02:36,453  INFO main LinkedList:printYourself:77 - NULL[ABC, KKK] -> 
+18:02:36,453  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:02:36,453  INFO main LinkedList:printYourself:77 - XYZ[KKK, null].
+18:02:36,453  INFO main LinkedList:printYourself:80 - 
+18:02:36,453  INFO main LinkedList:main:40 - error: List doesn't contain "GGG" value.
+18:02:36,455  INFO main LinkedList:main:44 - ABC
+18:02:36,455  INFO main LinkedList:main:44 - 
+18:02:36,455  INFO main LinkedList:main:44 - KKK
+18:02:36,455  INFO main LinkedList:main:44 - XYZ
+18:03:55,325  INFO main LinkedList:printYourself:82 - List is empty.
+18:03:55,330  INFO main LinkedList:printYourself:77 - ABC[null, null].
+18:03:55,474  INFO main LinkedList:printYourself:80 - 
+18:03:55,474  INFO main LinkedList:printYourself:77 - ABC[null, XYZ] -> 
+18:03:55,475  INFO main LinkedList:printYourself:77 - XYZ[ABC, null].
+18:03:55,475  INFO main LinkedList:printYourself:80 - 
+18:03:55,475  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,475  INFO main LinkedList:printYourself:77 - ABC[111, XYZ] -> 
+18:03:55,475  INFO main LinkedList:printYourself:77 - XYZ[ABC, null].
+18:03:55,475  INFO main LinkedList:printYourself:80 - 
+18:03:55,475  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,475  INFO main LinkedList:printYourself:77 - ABC[111, XYZ] -> 
+18:03:55,477  INFO main LinkedList:printYourself:77 - XYZ[ABC, ***] -> 
+18:03:55,478  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,478  INFO main LinkedList:printYourself:80 - 
+18:03:55,478  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,482  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:03:55,482  INFO main LinkedList:printYourself:77 - DDD[ABC, XYZ] -> 
+18:03:55,482  INFO main LinkedList:printYourself:77 - XYZ[DDD, ***] -> 
+18:03:55,482  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,482  INFO main LinkedList:printYourself:80 - 
+18:03:55,482  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,483  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:03:55,483  INFO main LinkedList:printYourself:77 - DDD[ABC, KKK] -> 
+18:03:55,483  INFO main LinkedList:printYourself:77 - KKK[DDD, XYZ] -> 
+18:03:55,483  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:03:55,483  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,483  INFO main LinkedList:printYourself:80 - 
+18:03:55,483  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - DDD[ABC, NULL] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - NULL[DDD, KKK] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,484  INFO main LinkedList:printYourself:80 - 
+18:03:55,484  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - ABC[111, DDD] -> 
+18:03:55,484  INFO main LinkedList:printYourself:77 - DDD[ABC, NULL] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - NULL[DDD, NULL] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,485  INFO main LinkedList:printYourself:80 - 
+18:03:55,485  INFO main LinkedList:printYourself:77 - 111[null, ABC] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - ABC[111, NULL] -> 
+18:03:55,485  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:03:55,486  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:03:55,486  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,486  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:03:55,486  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,486  INFO main LinkedList:printYourself:80 - 
+18:03:55,487  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:03:55,487  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:03:55,487  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:03:55,487  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,487  INFO main LinkedList:printYourself:77 - XYZ[KKK, ***] -> 
+18:03:55,488  INFO main LinkedList:printYourself:77 - ***[XYZ, null].
+18:03:55,488  INFO main LinkedList:printYourself:80 - 
+18:03:55,488  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:03:55,488  INFO main LinkedList:printYourself:77 - NULL[ABC, NULL] -> 
+18:03:55,488  INFO main LinkedList:printYourself:77 - NULL[NULL, KKK] -> 
+18:03:55,488  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,488  INFO main LinkedList:printYourself:77 - XYZ[KKK, null].
+18:03:55,489  INFO main LinkedList:printYourself:80 - 
+18:03:55,489  INFO main LinkedList:printYourself:77 - ABC[null, NULL] -> 
+18:03:55,489  INFO main LinkedList:printYourself:77 - NULL[ABC, KKK] -> 
+18:03:55,489  INFO main LinkedList:printYourself:77 - KKK[NULL, XYZ] -> 
+18:03:55,489  INFO main LinkedList:printYourself:77 - XYZ[KKK, null].
+18:03:55,489  INFO main LinkedList:printYourself:80 - 
+18:03:55,490  INFO main LinkedList:main:40 - error: List doesn't contain "GGG" value.
+18:03:55,492  INFO main LinkedList:main:44 - ABC
+18:03:55,492  INFO main LinkedList:main:44 - 
+18:03:55,492  INFO main LinkedList:main:44 - KKK
+18:03:55,492  INFO main LinkedList:main:44 - XYZ

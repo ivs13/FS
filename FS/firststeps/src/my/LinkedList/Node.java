@@ -5,6 +5,10 @@ class Node<T> {
     private Node<T> next = null;
     private Node<T> prev = null;
 
+    Node(T value) {
+        this.data = value;
+    }
+
     public T getData() {
         return data;
     }
@@ -15,10 +19,6 @@ class Node<T> {
 
     public Node<T> getPrev() {
         return prev;
-    }
-
-    Node(T value) {
-        this.data = value;
     }
 
     void insertBefore(Node<T> insertingNode) {

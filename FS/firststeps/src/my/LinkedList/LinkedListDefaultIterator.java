@@ -1,7 +1,6 @@
 package my.LinkedList;
 
 import java.util.*;
-import java.util.NoSuchElementException;
 
 class LinkedListDefaultIterator<T> implements Iterator<T> {
 
@@ -28,7 +27,7 @@ class LinkedListDefaultIterator<T> implements Iterator<T> {
 	@Override
 	public void remove()
 	{
-		throw new IllegalFormatException();
+        throw new UnsupportedOperationException("remove");
 	}
 
 }
