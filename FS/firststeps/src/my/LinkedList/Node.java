@@ -22,6 +22,8 @@ class Node<T> {
     }
 
     void insertBefore(Node<T> insertingNode) {
+        if (insertingNode == this)
+            throw new RuntimeException("Can't insert link to myself");
         insertingNode.prev = this.prev;
         insertingNode.next = this;
         if (insertingNode.prev != null) {
