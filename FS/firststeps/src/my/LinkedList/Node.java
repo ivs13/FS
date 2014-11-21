@@ -23,7 +23,7 @@ class Node<T> {
 
     void insertBefore(Node<T> insertingNode) {
         if (insertingNode == this)
-            throw new RuntimeException("Can't insert link to myself");
+            throw new RuntimeException("The same node can't be inserted before itself");
         insertingNode.prev = this.prev;
         insertingNode.next = this;
         if (insertingNode.prev != null) {
@@ -33,6 +33,8 @@ class Node<T> {
     }
 
     void insertAfter(Node<T> insertingNode) {
+        if (insertingNode == this)
+            throw new RuntimeException("The same node can't be inserted after itself");
         insertingNode.prev = this;
         insertingNode.next = this.next;
         if (insertingNode.next != null) {

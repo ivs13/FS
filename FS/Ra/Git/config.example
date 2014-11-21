@@ -1,0 +1,14 @@
+[user]
+	name = xxx
+	email = xxx@mail.ru
+[remote "origin"]
+	url = https://login:pwd@github.com/login/repo_name.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[http]
+	proxy = https://login:name@url.com:port
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "origin/master"]
+	remote = .
+	merge = refs/heads/master

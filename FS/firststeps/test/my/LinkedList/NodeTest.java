@@ -23,23 +23,54 @@ public class NodeTest {
     }
 
     @Test
-    public void getDefaultPrev() {
+    public void getNullPrev() {
         Node node = new Node<String>("A");
         assertNull(node.getPrev());
     }
 
+    @Test(expected = RuntimeException.class)
+    public void insertBeforeHimself() {
+        Node<String> node = new Node<String>("A");
+        node.insertBefore(node);
+    }
+
     @Test
-    public void getPrev() {
-        Node node = new Node<String>("A");
-        Node prevNode = new Node("B");
+    public void insertBefore() {
+        Node<String> node = new Node<String>("A");
+        Node<String> prevNode = new Node<String>("B");
         node.insertBefore(prevNode);
         assertSame(node.getPrev(), prevNode);
     }
 
-    @Test(expected = RuntimeException.class)
-    public void insertBeforeHimself() {
+    @Test
+    public void insertBefore2() {
+        Node<String> nodeA = new Node<String>("A");
+        Node<String> nodeB = new Node<String>("B");
+        Node<String> nodeC = new Node<String>("C");
+        nodeA.insertBefore(nodeC);
+        nodeA.insertBefore(nodeB);
+        assertSame(nodeA.getPrev(), nodeB);
+        assertSame(nodeB.getPrev(), nodeC);
+    }
+
+    @Test
+    public void getDefaultNext() {
         Node node = new Node<String>("A");
-        node.insertBefore(node);
+        assertNull(node.getNext());
+    }
+
+    @Test
+    public void getNext() {
+        Node<String> node = new Node<String>("A");
+        Node<String> nextNode = new Node<String>("B");
+        node.insertAfter(nextNode);
+        assertSame(node.getNext(), nextNode);
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void insertAfterHimself() {
+        Node<String> node = new Node<String>("A");
+        node.insertAfter(node);
     }
 
 }

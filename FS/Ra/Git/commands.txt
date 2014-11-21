@@ -1,0 +1,55 @@
+-- Git configuring:
+git config --global user.name "User Name"
+git config --global user.email "user@email"
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+git config --list
+
+
+-- Clone repository:
+git clone --progress -v "path_to_remote_git_repository" "Path_to_local_folder"
+
+git status
+
+-- get changes from server:
+git pull
+-- or instead of pull:
+git fetch
+git rebase
+
+
+-- List of remote branches:
+git brunch -a 
+
+-- Create new branch:
+git checkout -b branch_name
+git checkout --track remotes/origin/branch_name
+
+-- Commit changes:
+git add --all .
+git commit -m "some comment"
+git push origin temp/branche
+
+
+-- Revert changes:
+git checkout -- .
+git revert --no-commit 40f1ec1cf8360
+
+-- Merge changes to trunk from branche:
+git checkout trunk
+git merge branche
+
+-- if  after merge during the push we rejected with stale data 
+git fetch 
+git reset --hard origin/trunk
+git merge origin/branchXXXX 
+git push origin trunk
+
+-- Cherry-pick commits:
+git checkout trunk
+git fetch
+git rebase
+git cherry-pick -x 876534b2fa98f0e256eb08434534986564573645
+git cherry-pick -m1 -x 876534b2fa98f0e256eb08434534986564573645   <- if changes are from the other branche.
+git push origin trunk
+
